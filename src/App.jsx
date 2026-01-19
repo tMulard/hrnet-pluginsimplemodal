@@ -1,13 +1,11 @@
 import { useState } from "react";
 import "./App.css";
-import Modal from "hrnet-pluginsimplemodal";
+import Modale from "./components/Modale/Modale";
 
 function App() {
   const [isHidden, setIsHidden] = useState(true);
 
-  const handleClick = () => {
-    setIsHidden(!isHidden);
-  };
+  const handleClick = () => { setIsHidden(!isHidden);};
 
   return (
     <>
@@ -15,9 +13,9 @@ function App() {
         Modal
       </button>
       
-      <Modal isHidden={isHidden} isHiddenCross={false} toggleDisplay={handleClick}>
+      <Modale isHidden={isHidden} isHiddenCross={false} handleClick={handleClick}>
         <h1>Bonjour</h1>
-      </Modal>
+      </Modale>
     </>
   );
 }
