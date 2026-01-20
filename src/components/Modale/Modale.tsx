@@ -1,12 +1,11 @@
 import React from "react";
+import "./Modale.css";
 
 interface ModaleProps {
   isHidden: boolean;
   isHiddenCross: boolean;
-  children: Object;
-  handleClick: Function (params:isHidden) {
-    return (!isHidden);
-  };
+  children: React.ReactNode;
+  handleClick: () => void;
 }
 const Modale: React.FC<ModaleProps> = ({ isHidden, isHiddenCross, children, handleClick }) => {
   return (
@@ -16,6 +15,6 @@ const Modale: React.FC<ModaleProps> = ({ isHidden, isHiddenCross, children, hand
         )}
         {children}
     </div>
-  )
+    );
 };
 export default Modale;
