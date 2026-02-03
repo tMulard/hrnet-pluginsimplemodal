@@ -4,6 +4,7 @@ import typescript from "@rollup/plugin-typescript";
 import dts from "rollup-plugin-dts";
 import postcss from "rollup-plugin-postcss";
 import packageJson from "./package.json" with { type: "json" };
+import { visualizer } from "rollup-plugin-visualizer";
 
 export default [
   {
@@ -24,6 +25,7 @@ export default [
     plugins: [
       resolve(),
       commonjs(),
+      visualizer(),
       typescript({
         tsconfig: "./tsconfig.json",
         exclude: ["**/*.test.tsx", "**/*.test.ts", "**/*.stories.ts"],
