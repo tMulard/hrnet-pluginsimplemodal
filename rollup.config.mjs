@@ -10,6 +10,7 @@ export default [
   {
     preserveModules: true,
     input: "src/index.ts",
+    external:["react", "react-dom", "react/jsx-runtime"],
     output: [
       {
         file: packageJson.main,
