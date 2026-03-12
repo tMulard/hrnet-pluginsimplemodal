@@ -1,6 +1,6 @@
 {
   "name": "hrnet-pluginsimplemodal",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
   "types": "dist/index.d.ts",
@@ -12,6 +12,11 @@
     "build": "rollup -c",
     "lint": "eslint ."
   },
+  "keywords": [
+    "modale",
+    "plugin",
+    "typescript"
+  ],
   "babel": {
     "sourceType": "unambiguous",
     "presets": [
