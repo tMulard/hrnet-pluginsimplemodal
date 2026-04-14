@@ -1,0 +1,1 @@
+export { default as Modale } from "./components/Modale";
